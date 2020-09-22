@@ -1,0 +1,24 @@
+<header>
+  <div class="hcontent">
+    Weather app
+  </div>
+  <div class="hcontent" style="text-align: right;">
+    <input type="text" [(ngModel)]="city">
+    <span class="material-icons" (click)="updateWeather()">explore</span>
+  </div>
+</header>
+<main>
+  Currently in <b>{{ city }}</b>
+  <p class="temp">{{ temp }}°C</p>
+</main>
+<article class="grid">
+  <div class="span-col-2"><b>{{ description | titlecase }}</b></div>
+  <div>Pressure: <span class="temp2">{{pressure}}hPa</span></div>
+  <div>Feels like: <span class="temp2">{{realTemp}}°C</span></div>
+  <div>Min: <span class="temp2">{{minTemp}}°C</span></div>
+  <div>Max: <span class="temp2">{{maxTemp}}°C</span></div>
+  <div class="span-col-2">Wind speed: <span class="temp2">{{wind}}m/s</span></div>
+  <div>Sunrise: <span class="temp2">{{sunrise}}</span></div>
+  <div>Sunset: <span class="temp2">{{sunset}}</span></div>
+</article>
+<app-footer></app-footer>

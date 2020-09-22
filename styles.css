@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("./assets/bg.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
